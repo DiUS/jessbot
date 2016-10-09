@@ -1,0 +1,18 @@
+{
+  "name": "jessbot",
+  "version": "1.0.0",
+  "description": "Helping buddies become better buddies",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stephen Bartlett",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0",
+    "slapp": "^1.2.0",
+    "slapp-context-beepboop": "^1.1.0",
+    "slapp-convo-beepboop": "^1.0.0"
+  }
+}
