@@ -4,6 +4,5 @@ config:
   - name: FIREBASE_DB_URL
     friendly_name: Firebase database url
     info: A place to persist information
-    type: secret
     default: NOT A VALID TOKEN
     global: true
