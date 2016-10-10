@@ -24,9 +24,9 @@ module.exports = (slapp) => {
           color: '#ffe933'
         },
         {
-          title: 'neglated',
+          title: 'neglected',
           text: "A bit sad I know, but I keep track of who we haven't heard from in a while",
-          fallback: 'neglacted',
+          fallback: 'neglected',
           color: '#ff3333'
         },
         {
