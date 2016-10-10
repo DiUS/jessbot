@@ -6,3 +6,8 @@ config:
     info: A place to persist information
     default: NOT A VALID TOKEN
     global: true
+
+  - name: FIREBASE_SERVICE_ACCOUNT_JSON
+    friendly_name: Firebase service account json
+    default: NOT A VALID TOKEN
+    global: true
