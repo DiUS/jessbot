@@ -1,22 +1,12 @@
 'use strict'
+
+const App = require('./lib/')
 const express = require('express')
-const Slapp = require('slapp')
-const BeepBoopConvoStore = require('slapp-convo-beepboop')
-const BeepBoopContext = require('slapp-context-beepboop')
-if (!process.env.PORT) throw Error('PORT missing but required')
+const PORT = process.env.PORT || 4000
 
-var slapp = Slapp({
-  convo_store: BeepBoopConvoStore(),
-  context: BeepBoopContext()
+App(express()).listen(PORT, (err) => {
+  if (err) {
+    return console.error(err)
+  }
+  console.log('http server started on port %s', PORT)
 })
-
-require('./flows')(slapp)
-var app = slapp.attachToExpress(express())
-
-app.get('/', function (req, res) {
-  res.send('Hello')
-})
-
-console.log('Listening on :' + process.env.PORT)
-app.listen(process.env.PORT)
-

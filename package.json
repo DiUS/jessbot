@@ -11,6 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.14.0",
+    "firebase": "^3.4.1",
     "slapp": "^1.2.0",
     "slapp-context-beepboop": "^1.1.0",
     "slapp-convo-beepboop": "^1.0.0"
